@@ -5,6 +5,7 @@ import MarsAround from "./components/MarsAround";
 import Home from "./components/Home";
 import CalculatorHome from "./components/calculator/CalculatorHome";
 import GameClicker from "./components/clicker/GameClicker";
+import MarsGame from "./components/MarsGame";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/GameClicker">
             <GameClicker />
+          </Route>
+          <Route path="/mars-game">
+            <MarsGame />
           </Route>
         </Switch>
       </BrowserRouter>
