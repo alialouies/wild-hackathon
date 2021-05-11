@@ -11,7 +11,7 @@ function MarsAroundHeader() {
             <div id="sign">
                 <h2>
                     Mars - Around
-                </h2>
+                </h2>     
             </div>
             <div id="welcome">Enjoy your Meal</div>
         </div>

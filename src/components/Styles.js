@@ -24,10 +24,11 @@ export const Nav = styled(motion.nav)`
   position: fixed;
   top: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
+  padding-bottom: 30px;
 `;
 
 
