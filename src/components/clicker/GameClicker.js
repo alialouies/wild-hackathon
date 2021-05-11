@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import "../App.css";
 import "./games.css";
 import Clicker from "./Clicker";
 import Item from "./Coin";
-
-
 
 class GameClicker extends Component {
   constructor(props) {
@@ -14,8 +11,8 @@ class GameClicker extends Component {
       currency: 0,
       amount: {
         toClick: 1,
-        toSecond: 0
-      }
+        toSecond: 0,
+      },
     };
   }
 
@@ -27,8 +24,8 @@ class GameClicker extends Component {
         currency: initialState.currency,
         amount: {
           toClick: initialState.amount.toClick,
-          toSecond: initialState.amount.toSecond
-        }
+          toSecond: initialState.amount.toSecond,
+        },
       });
     }
     this.getCurrency();
@@ -37,14 +34,14 @@ class GameClicker extends Component {
 
   incrementCurrency = () => {
     this.setState({
-      currency: this.state.currency + this.state.amount.toClick
+      currency: this.state.currency + this.state.amount.toClick,
     });
   };
 
-  subtractCurrency = price => {
+  subtractCurrency = (price) => {
     if (this.state.currency >= price) {
       this.setState({
-        currency: this.state.currency - price
+        currency: this.state.currency - price,
       });
       return true;
     }
@@ -56,8 +53,8 @@ class GameClicker extends Component {
       this.setState({
         amount: {
           ...this.state.amount,
-          toClick: this.state.amount.toClick + addAmount
-        }
+          toClick: this.state.amount.toClick + addAmount,
+        },
       });
     }
   };
@@ -67,8 +64,8 @@ class GameClicker extends Component {
       this.setState({
         amount: {
           ...this.state.amount,
-          toSecond: this.state.amount.toSecond + addAmount
-        }
+          toSecond: this.state.amount.toSecond + addAmount,
+        },
       });
     }
   };
@@ -77,7 +74,7 @@ class GameClicker extends Component {
     setInterval(() => {
       if (this.state.amount.toSecond > 0) {
         this.setState({
-          currency: this.state.currency + this.state.amount.toSecond / 5
+          currency: this.state.currency + this.state.amount.toSecond / 5,
         });
       }
     }, 200);
@@ -88,7 +85,7 @@ class GameClicker extends Component {
       localStorage.setItem("coin", JSON.stringify(this.state));
     }, 3000);
   };
- 
+
   render() {
     return (
       <main className="App">
@@ -97,14 +94,10 @@ class GameClicker extends Component {
             {Math.round(this.state.currency)}{" "}
             <span> - {this.state.amount.toSecond}</span>
           </div>
-          <Clicker
-            time="200"
-            incrementCurrency={this.incrementCurrency}
-          />
+          <Clicker time="200" incrementCurrency={this.incrementCurrency} />
         </div>
-       
-            
-            <div className="menu">
+
+        <div className="menu">
           <Item
             amount="5"
             name="Pick"
@@ -123,10 +116,6 @@ class GameClicker extends Component {
             incrementAmount={() => this.incrementAmountToSecond(8000, 80)}
           />
         </div>
-
-        
-        
-        
       </main>
     );
   }
