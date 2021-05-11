@@ -85,7 +85,7 @@ function Navbar() {
             </Link>
        </LinkWrapper>
        <LinkWrapper>
-            <Link to="/" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
+            <Link to="/GameClicker" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
               <div className="sign-green">
                   <p>PLAY</p><br/>
                   <p>www.mars-games.com</p>

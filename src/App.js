@@ -20,12 +20,11 @@ function App() {
     <Switch>
       <Route exact path="/"><Home/></Route>
       <Route path="/restaurant"><MarsAround/></Route>
+      <Route path="/GameClicker"><GameClicker/></Route>
     </Switch>
     </BrowserRouter></div>
-     <br></br>
-      <br></br>
-      <h1>Click to earn Coins</h1>
-      <GameClicker />
+     
+      
     </>)
   
 }

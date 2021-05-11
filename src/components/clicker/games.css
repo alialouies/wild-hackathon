@@ -1,12 +1,11 @@
 html,
 body {
-  background-image: url("./marsbg.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+  z-index: 1;
 }
 
 .App {
+  
   display: flex;
   flex-direction: column;
   /* background-image: url ("./marsbg.jpeg"); */
@@ -54,6 +53,7 @@ body {
 }
 
 .menu {
+  
   display: flex;
   justify-content: space-around;
   width: 600px;
@@ -102,4 +102,10 @@ body {
   height: 250px;
   width: 700px;
   display: inline-block;
+}
+.header{
+  background-image: url("./marsbg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
