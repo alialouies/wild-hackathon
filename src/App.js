@@ -19,9 +19,6 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      <div>
-        <CalculatorHome />
-      </div>
     </>
   );
 }
