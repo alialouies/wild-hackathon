@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "../App.css";
+import "./games.css";
 import Clicker from "./Clicker";
 import Item from "./Coin";
-import marsbg from "../marsbg.jpeg";
+
 
 
 class GameClicker extends Component {
