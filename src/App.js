@@ -1,12 +1,28 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Weather from "./components/Weather";
+import React from "react";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import MarsAround from "./components/MarsAround";
+import Home from "./components/Home";
+import CalculatorHome from "./components/calculator/CalculatorHome";
 
 function App() {
   return (
-    <div className="App">
-      <Weather />
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/restaurant">
+            <MarsAround />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+      <div>
+        <CalculatorHome />
+      </div>
+    </>
   );
 }
 
