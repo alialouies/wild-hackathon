@@ -3,6 +3,9 @@ import { Header, Nav, Link, SvgBox, Content } from "./components/Styles.js";
 import "./assets/red-planet.jpg"
 
 import "./App.css";
+import logo from './logo.svg';
+import './App.css';
+import Restaurant from './MarsAround'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +76,8 @@ function App() {
         <Link variants={linkVariants}>Life</Link>
         <Link variants={linkVariants}>Map</Link>
       </Nav>
+    <div className="App">
+     <Restaurant/>
     </div>
   );
 }
