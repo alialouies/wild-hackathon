@@ -1,0 +1,104 @@
+html,
+body {
+  background-image: url("./marsbg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* background-image: url ("./marsbg.jpeg"); */
+  align-content: center;
+  padding-top: 50px;
+  font-size: calc(10px + 2vmin);
+  color: rgb(34, 28, 9);
+  text-align: center;
+}
+
+.mushroom-button {
+  width: 12vh;
+  height: 8.5vh;
+  background: url("./mushroom.png") left;
+  background-size: 12vh;
+
+  cursor: pointer;
+  border: 20px;
+}
+
+.mushroom-button:active {
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+}
+.water-button {
+  width: 12vh;
+  height: 8.5vh;
+  background: url("./Water.png") right;
+  background-size: cover;
+  cursor: pointer;
+  border: 20px;
+  padding-top: 95px;
+}
+
+.water-button:active {
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+}
+
+.currency {
+  margin: 20px 0 80px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 150px;
+  border-radius: 4px;
+}
+
+.store-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.7);
+  border-radius: 9px;
+  margin: 25px 15px;
+  cursor: pointer;
+}
+
+.store-item:active {
+  width: 96px;
+  height: 96px;
+  border: dashed 2px rgb(255, 215, 64, 0.1);
+  background-color: rgba(172, 36, 36, 0.25);
+  box-shadow: none;
+}
+
+.icon-price {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("https://cdn2.iconfinder.com/data/icons/flat-icons-19/512/Coin.png")
+    center center;
+  background-size: cover;
+}
+.bg {
+  position: sticky;
+  align-content: center;
+  text-align: center;
+  color: white;
+
+  margin-left: 220;
+  height: 250px;
+  width: 700px;
+  display: inline-block;
+}
