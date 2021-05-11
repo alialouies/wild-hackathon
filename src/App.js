@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Header, Nav, Link, SvgBox } from "./components/Styles.js";
+import { Header, Nav, Link, SvgBox, Content } from "./components/Styles.js";
+import "./assets/red-planet.jpg"
 
 import "./App.css";
 
@@ -40,7 +41,8 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="main">
+      <h1 className="title">Welcome to Mars</h1>
       <Header>
         <SvgBox
           variants={iconVariants}

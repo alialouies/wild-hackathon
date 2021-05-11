@@ -1,17 +1,24 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import "../assets/red-planet.jpg"
+
 
 export const Header = styled.header`
   background: black;
-  position: relative;
+  position: absolute;
   display: flex;
   padding: 1rem;
   justify-content: flex-end;
   z-index: 2;
+      position: absolute;
+    top: 0;
+    right: 0;
 `;
 
+
+
 export const Nav = styled(motion.nav)`
-  background-color: orange;
+  background-color: black;
   height: 90vh;
   width: 100vw;
   position: fixed;
