@@ -1,0 +1,17 @@
+/* .home {
+    
+    background-position: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  */
+
+
+  .home {
+    background-image: url("../assets/red-planet.jpg");
+    background-color: #000;
+    height: 100vh;
+  }

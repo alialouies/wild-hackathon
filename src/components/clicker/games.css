@@ -15,6 +15,7 @@ body {
   font-size: calc(10px + 2vmin);
   color: rgb(34, 28, 9);
   text-align: center;
+  
 }
 
 .mushroom-button {
@@ -28,13 +29,13 @@ body {
 }
 
 .mushroom-button:active {
-  width: 140px;
-  height: 140px;
-  margin: 10px;
+  width: 12.3vh;
+  height: 8.7vh;
+ 
 }
 .water-button {
-  width: 12vh;
-  height: 8.5vh;
+  width: 10vh;
+  height: 14.5vh;
   background: url("./Water.png") right;
   background-size: cover;
   cursor: pointer;
