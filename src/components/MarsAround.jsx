@@ -1,7 +1,7 @@
 import React from 'react'
 import MarsAroundHeader from './MarsAroundHeader'
 import Products from './Products'
-import './MarsAround.css'
+import '../styles/MarsAround.css'
 
 
 function MarsAround() {

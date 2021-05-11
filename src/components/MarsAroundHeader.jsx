@@ -1,5 +1,5 @@
 import React from 'react'
-import './MarsAround.css'
+import '../styles/MarsAround.css'
 
 function MarsAroundHeader() {
     return (

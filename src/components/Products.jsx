@@ -1,10 +1,10 @@
 import React from "react";
-import Edamame from "./assets/edamame.png";
-import Mars from "./assets/mars.png";
-import Burger from "./assets/pinkish-burger.png";
-import Pepsi from "./assets/pepsi.png";
-import Fries from "./assets/pommes.png";
-import CashSound from './assets/ka-ching.mp3'
+import Edamame from "../assets/edamame.png";
+import Mars from "../assets/mars.png";
+import Burger from "../assets/pinkish-burger.png";
+import Pepsi from "../assets/pepsi.png";
+import Fries from "../assets/pommes.png";
+import CashSound from '../assets/ka-ching.mp3'
 
 function Products() {
   const audio = new Audio(CashSound);

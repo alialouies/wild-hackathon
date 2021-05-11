@@ -18,20 +18,21 @@ export const Header = styled.header`
 
 
 export const Nav = styled(motion.nav)`
-  background-color: black;
+  background-color: #000;
   height: 90vh;
   width: 100vw;
   position: fixed;
   top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  list-style: none;
 `;
 
 
 
-export const Link = styled(motion.li)`
+export const LinkWrapper = styled(motion.li)`
   color: white;
   margin-bottom: 1.6rem;
   font-size: 1.4rem;
