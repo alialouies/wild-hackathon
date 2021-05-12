@@ -112,7 +112,7 @@ function Navbar(props) {
         </LinkWrapper>
         <LinkWrapper>
           <Link
-            to="/GameClicker"
+            to="/mars-game"
             variants={linkVariants}
             onClick={() => handleChange(!isOpen)}
           >
@@ -125,7 +125,7 @@ function Navbar(props) {
           </LinkWrapper>
           <LinkWrapper>
           <Link
-            to="/mars-game"
+            to="/GameClicker"
             variants={linkVariants}
             onClick={() => handleChange(!isOpen)}
           >

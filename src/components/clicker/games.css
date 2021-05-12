@@ -4,6 +4,11 @@ body {
 }
 
 .App {
+  margin-top: 40px;
+  background-image: url("./marsbg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   /* background-image: url ("./marsbg.jpeg"); */
@@ -15,11 +20,11 @@ body {
 }
 
 .mushroom-button {
+  cursor: pointer;
   width: 12vh;
   height: 8.5vh;
   background: url("./mushroom.png") left;
   background-size: 12vh;
-
   cursor: pointer;
   border: 20px;
 }
@@ -98,8 +103,8 @@ body {
   display: inline-block;
 }
 .header {
-  background-image: url("./marsbg.jpeg");
-  background-position: center;
+  /* background-image: url("./marsbg.jpeg"); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
