@@ -17,8 +17,8 @@ const Menu = () => {
           Gain Money
         </button>
         <br></br>
-        <button className="menu-text" onClick={() => history.push("/menu")}>
-          Play Game
+        <button className="menu-text" onClick={() => history.push("/mars-game")}>
+          Kill Earth Game
         </button>
         <br></br>
         <button className="menu-text" onClick={() => history.push("/calculator")}>
@@ -26,11 +26,7 @@ const Menu = () => {
         </button>
         <br></br>
         <button className="menu-text" onClick={() => history.push("/restaurant")}>
-          Shop
-        </button>
-        <br></br>
-        <button className="menu-text" onClick={() => history.push("/killearth")}>
-          Kill Earth game
+          FOOD SHOP
         </button>
         <br></br>
         <button className="menu-text" onClick={() => history.push("/weather")}>

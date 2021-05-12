@@ -116,8 +116,8 @@ function Navbar(props) {
             variants={linkVariants}
             onClick={() => handleChange(!isOpen)}
           >
-            <div className="sign-green">
-              <p>PLAY</p>
+            <div className="sign-blue">
+              <p>KILL EARTH GAME</p>
               <br />
               <p>www.mars-games.com</p>
             </div>
@@ -129,24 +129,13 @@ function Navbar(props) {
             variants={linkVariants}
             onClick={() => handleChange(!isOpen)}
           >
-            <div className="sign">
-              <p className="red-neon">The Game</p>
+            <div className="sign-yellow">
+              <p>EARN MONEY AT</p>
+              <br/>
+              <p>www.farmer.com</p>
             </div>
           </Link>
           </LinkWrapper>
-        <LinkWrapper>
-          <Link
-            to="/"
-            variants={linkVariants}
-            onClick={() => handleChange(!isOpen)}
-          >
-            <div className="sign-blue">
-              <p>VIEW</p>
-              <br />
-              <p>www.mars-gallery.com</p>
-            </div>
-          </Link>
-        </LinkWrapper>
         <LinkWrapper>
           <Link
             to="/calculator"
