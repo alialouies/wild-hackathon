@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import MarsAround from "./components/MarsAround";
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar isOpen={isOpen} handleChange={handleChange}/>
+        <Navbar isOpen={isOpen} handleChange={handleChange} />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -28,7 +28,7 @@ function App() {
             <Menu />
           </Route>
           <Route path="/restaurant">
-            <MarsAround isOpen={isOpen} handleChange={handleChange}/>
+            <MarsAround isOpen={isOpen} handleChange={handleChange} />
           </Route>
           <Route path="/GameClicker">
             <GameClicker />

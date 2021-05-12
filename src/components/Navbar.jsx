@@ -12,7 +12,7 @@ import "../App.css";
 import "../styles/Navbar.css";
 
 function Navbar(props) {
-  const {isOpen, handleChange} = props;
+  const { isOpen, handleChange } = props;
 
   const iconVariants = {
     opened: {
@@ -142,6 +142,19 @@ function Navbar(props) {
               <p>VIEW</p>
               <br />
               <p>www.mars-gallery.com</p>
+            </div>
+          </Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <Link
+            to="/calculator"
+            variants={linkVariants}
+            onClick={() => handleChange(!isOpen)}
+          >
+            <div className="sign-blue">
+              <p>CALCULATOR</p>
+              <br />
+              <p></p>
             </div>
           </Link>
         </LinkWrapper>
