@@ -7,6 +7,7 @@ import CalculatorHome from "./components/calculator/CalculatorHome";
 import GameClicker from "./components/clicker/GameClicker";
 import Menu from "./components/Menu";
 import Weather from "./components/Weather";
+import MarsGame from "./components/MarsGame";
 
 function App() {
   return (
@@ -30,10 +31,12 @@ function App() {
             <CalculatorHome />
           </Route>
           <Route path="/killearth">
-            <Menu />
+            <MarsGame />
           </Route>
           <Route path="/weather">
             <Weather />
+          <Route path="/mars-game">
+            <MarsGame />
           </Route>
         </Switch>
       </BrowserRouter>

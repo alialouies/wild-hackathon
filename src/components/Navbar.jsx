@@ -122,6 +122,15 @@ function Navbar() {
               <p>www.mars-games.com</p>
             </div>
           </Link>
+          <Link
+            to="/mars-game"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign">
+              <p className="red-neon">The Game</p>
+            </div>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
           <Link
