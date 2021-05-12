@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import { Header, Nav, LinkWrapper, SvgBox, Content } from "../components/Styles.js";
-import {Link} from "react-router-dom"
+import {
+  Header,
+  Nav,
+  LinkWrapper,
+  SvgBox,
+  Content,
+} from "../components/Styles.js";
+import { Link } from "react-router-dom";
 import "../assets/red-planet.jpg";
 import "../App.css";
-import "../styles/Navbar.css"
+import "../styles/Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +48,6 @@ function Navbar() {
   };
   return (
     <div className="main">
-      <h1 className="title">Welcome to Mars</h1>
       <Header>
         <SvgBox
           variants={iconVariants}
@@ -70,36 +75,67 @@ function Navbar() {
         animate={isOpen ? "opened" : "closed"}
       >
         <LinkWrapper>
-            <Link to="/" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
-              <div className="sign">
-                  <p className="red-neon">Home</p>
-              </div>
-            </Link>
+          <Link
+            to="/menu"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign-green">
+              <p>MENU</p>
+              <br />
+            </div>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-            <Link to="/restaurant" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
-              <div className="sign-yellow">
-                  <p>EAT TASTY MEALS AT</p><br/>
-                  <p>www.mars-around.com</p>
-              </div>
-            </Link>
-       </LinkWrapper>
-       <LinkWrapper>
-            <Link to="/GameClicker" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
-              <div className="sign-green">
-                  <p>PLAY</p><br/>
-                  <p>www.mars-games.com</p>
-              </div>
-            </Link>
-       </LinkWrapper>
-       <LinkWrapper>
-            <Link to="/" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
-              <div className="sign-blue">
-                  <p>VIEW</p><br/>
-                  <p>www.mars-gallery.com</p>
-              </div>
-            </Link>
-       </LinkWrapper>
+          <Link
+            to="/"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign">
+              <p className="red-neon">Home</p>
+            </div>
+          </Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <Link
+            to="/restaurant"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign-yellow">
+              <p>EAT TASTY MEALS AT</p>
+              <br />
+              <p>www.mars-around.com</p>
+            </div>
+          </Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <Link
+            to="/GameClicker"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign-green">
+              <p>PLAY</p>
+              <br />
+              <p>www.mars-games.com</p>
+            </div>
+          </Link>
+        </LinkWrapper>
+        <LinkWrapper>
+          <Link
+            to="/"
+            variants={linkVariants}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="sign-blue">
+              <p>VIEW</p>
+              <br />
+              <p>www.mars-gallery.com</p>
+            </div>
+          </Link>
+        </LinkWrapper>
       </Nav>
     </div>
   );

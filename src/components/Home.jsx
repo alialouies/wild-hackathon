@@ -1,13 +1,20 @@
 import React from "react";
 import "../styles/Home.css";
+import { useHistory } from "react-router-dom";
 
 function Home() {
+  const history = useHistory();
+  function handleClick() {
+    history.push("/menu");
+  }
   return (
     <>
       <div className="home">
         <div id="home-container">
-            <div className="home-text">MARS first web</div>
-            <div className="home-txt">Welcome to the first web network on Mars!</div>
+          <button className="home-text" onClick={handleClick}>
+            MARS first web
+          </button>
+          <div className="home-txt">Welcome to Mars!</div>
         </div>
       </div>
     </>
