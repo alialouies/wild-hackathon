@@ -11,8 +11,8 @@ import "../assets/red-planet.jpg";
 import "../App.css";
 import "../styles/Navbar.css";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar(props) {
+  const {isOpen, handleChange} = props;
 
   const iconVariants = {
     opened: {
@@ -52,7 +52,7 @@ function Navbar() {
         <SvgBox
           variants={iconVariants}
           animate={isOpen ? "opened" : "closed"}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => handleChange(!isOpen)}
         >
           <svg
             width="24"
@@ -78,7 +78,7 @@ function Navbar() {
           <Link
             to="/menu"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign-green">
               <p>MENU</p>
@@ -90,7 +90,7 @@ function Navbar() {
           <Link
             to="/"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign">
               <p className="red-neon">Home</p>
@@ -101,7 +101,7 @@ function Navbar() {
           <Link
             to="/restaurant"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign-yellow">
               <p>EAT TASTY MEALS AT</p>
@@ -114,7 +114,7 @@ function Navbar() {
           <Link
             to="/GameClicker"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign-green">
               <p>PLAY</p>
@@ -125,7 +125,7 @@ function Navbar() {
           <Link
             to="/mars-game"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign">
               <p className="red-neon">The Game</p>
@@ -136,7 +136,7 @@ function Navbar() {
           <Link
             to="/"
             variants={linkVariants}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => handleChange(!isOpen)}
           >
             <div className="sign-blue">
               <p>VIEW</p>
