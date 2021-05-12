@@ -80,7 +80,7 @@ function Navbar(props) {
             variants={linkVariants}
             onClick={() => handleChange(!isOpen)}
           >
-            <div className="sign-green">
+            <div className="sign sign-green">
               <p>MENU</p>
               <br />
             </div>
@@ -122,6 +122,8 @@ function Navbar(props) {
               <p>www.mars-games.com</p>
             </div>
           </Link>
+          </LinkWrapper>
+          <LinkWrapper>
           <Link
             to="/mars-game"
             variants={linkVariants}
@@ -131,7 +133,7 @@ function Navbar(props) {
               <p className="red-neon">The Game</p>
             </div>
           </Link>
-        </LinkWrapper>
+          </LinkWrapper>
         <LinkWrapper>
           <Link
             to="/"

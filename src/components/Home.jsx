@@ -14,7 +14,7 @@ function Home() {
           <button className="home-text" onClick={handleClick}>
             MARS first web
           </button>
-          <div className="home-txt">Welcome to Mars!</div>
+          <div className="home-txt">Welcome to the first Web network on Mars!</div>
         </div>
       </div>
     </>

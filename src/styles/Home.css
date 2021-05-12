@@ -1,3 +1,8 @@
+#menu-container {
+  display: flex;
+  justify-content: center;
+}
+
 .home {
   background-image: url("../assets/red-planet.jpg");
   background-color: #000;
