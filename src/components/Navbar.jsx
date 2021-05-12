@@ -70,9 +70,9 @@ function Navbar() {
         animate={isOpen ? "opened" : "closed"}
       >
         <LinkWrapper>
-            <Link to="/" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
+            <Link to="/mars-game" variants={linkVariants} onClick={() => setIsOpen(!isOpen)}>
               <div className="sign">
-                  <p className="red-neon">Home</p>
+                  <p className="red-neon">The Game</p>
               </div>
             </Link>
         </LinkWrapper>
