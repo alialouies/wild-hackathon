@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./CalculatorHome.css";
 
 const CalculatorHome = () => {
   const [text, setText] = useState("");
@@ -11,8 +12,8 @@ const CalculatorHome = () => {
   const marsAge = (textTwo * 365) / 687;
   console.log(textTwo);
   return (
-    <div className="App">
-      <form onSubmit={updateSubmit}>
+    <div className="home-text" idName="calculator">
+      <form className="home-text" onSubmit={updateSubmit}>
         <label>
           <input
             text="text"
@@ -20,7 +21,7 @@ const CalculatorHome = () => {
             onChange={(e) => setText(e.target.value)}
           />
         </label>
-        <button className="button" type="submit">
+        <button className="home-text" type="submit">
           CALCULATE
         </button>
       </form>
