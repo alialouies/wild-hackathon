@@ -30,11 +30,9 @@ function App() {
           <Route path="/calculator">
             <CalculatorHome />
           </Route>
-          <Route path="/killearth">
-            <MarsGame />
-          </Route>
           <Route path="/weather">
             <Weather />
+          </Route>
           <Route path="/mars-game">
             <MarsGame />
           </Route>
